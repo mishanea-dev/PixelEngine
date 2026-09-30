@@ -1,0 +1,22 @@
+# Documentation
+docs/
+
+# Build output
+build/
+out/
+bin/
+lib/
+*.user
+.vs/
+CMakeUserPresets.json
+
+# vcpkg
+vcpkg_installed/
+
+# Engine-generated
+Library/
+*.pak
+
+# OS
+Thumbs.db
+.DS_Store

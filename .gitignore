@@ -1,0 +1,27 @@
+# CMake generated files
+/build/
+/cmake-build-*/
+/build-*/
+CMakeUserPresets.json
+
+# IDE and compiler files
+.vs/
+.vscode/*
+!.vscode/settings.json
+*.user
+*.suo
+*.obj
+*.pdb
+*.ilk
+*.d
+
+# Runtime output
+/bin/
+/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docs
+docs/**

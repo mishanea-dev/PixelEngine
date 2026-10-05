@@ -73,6 +73,12 @@ add_executable(pixel_engine
 
 target_link_libraries(pixel_engine PRIVATE raylib rlimgui)
 
+add_custom_command(TARGET pixel_engine POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_CURRENT_SOURCE_DIR}/assets"
+        "$<TARGET_FILE_DIR:pixel_engine>/assets"
+)
+
 if(MSVC)
     target_compile_options(pixel_engine PRIVATE /W4 /permissive-)
 else()
